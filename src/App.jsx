@@ -19,7 +19,8 @@ export default function App() {
       body: JSON.stringify({ items: [{ product_id: "A113", }] }),
     })
       .then((res) => res.json())
-      .then((data) => setClientSecret(data.clientSecret));
+      .then((data) => setClientSecret(data.clientSecret))
+      .catch((_)=>{setClientSecret("error")});
   }, []);
 
   // background color to match sdk theme
@@ -44,12 +45,12 @@ export default function App() {
 
   return (
     <div className="App">
-      { clientSecret && (
+      { clientSecret &&clientSecret!="error"&& (
         <Elements options={options} stripe={hyperPromise}>
           <CheckoutForm />
         </Elements>
       )}{
-      !clientSecret && <div id="user-message">{"Please provide valid Api key in server.js and Publishable key in App.jsx"}</div>}
+      clientSecret=="error" && <div id="user-message">{"Please provide valid Api key in server.js and Publishable key in App.jsx"}</div>}
     </div>
   );
 }
