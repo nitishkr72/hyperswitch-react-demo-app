@@ -23,9 +23,6 @@
     "eject": "react-scripts eject",
     "start": "concurrently \"yarn start-client\" \"yarn start-server\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
