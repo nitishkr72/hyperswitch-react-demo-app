@@ -2,11 +2,11 @@
   "name": "hyperswitch-demo-app",
   "version": "0.1.0",
   "dependencies": {
-    "@juspay-tech/hyper-js": "^0.0.3",
-    "@juspay-tech/hyper-node": "^0.0.2",
-    "@juspay-tech/react-hyper-js": "^0.0.1",
+    "@juspay-tech/hyper-js": "^1.0.0",
+    "@juspay-tech/hyper-node": "^1.0.0",
+    "@juspay-tech/react-hyper-js": "^1.0.0",
     "express": "^4.17.1",
-    "react": "^16.9.0",
+    "react": "^18.2.0",
     "react-dom": "^16.9.0",
     "react-scripts": "^5.0.1"
   },

@@ -69,6 +69,9 @@ export default function CheckoutForm() {
 
   const paymentElementOptions = {
     layout: "tabs",
+    wallets: {
+      walletReturnUrl: "http://localhost:3000/complete",
+    }
   };
 
   return (

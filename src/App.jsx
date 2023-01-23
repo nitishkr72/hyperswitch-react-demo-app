@@ -5,8 +5,8 @@ import { Elements } from "@juspay-tech/react-hyper-js";
 import CheckoutForm from "./CheckoutForm";
 import "./App.css";
 
-// use your hyperswitch publishable key here
-const hyperPromise = loadHyper("publishable_key");
+// replace the test publishable key with your hyperswitch publishable key 
+const hyperPromise = loadHyper("pk_snd_1e5425f5dea94ee793cf34ea326294d8");
 
 export default function App() {
   const [clientSecret, setClientSecret] = useState("");

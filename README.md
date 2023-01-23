@@ -10,7 +10,7 @@ A simple react app to demo the new react-hyper-js library
 yarn install
 ```
 
-2. Provide valid Api key in server.js and Publishable key in App.jsx. You can create your keys using the Hyperswitch dashboard.
+2. Provide valid Api key in server.js and Publishable key in App.jsx. You can create your keys using the Hyperswitch dashboard. https://app.hyperswitch.io/
 
 ```
 //in server.js
