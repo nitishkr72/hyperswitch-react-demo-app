@@ -31,16 +31,22 @@ export default function App() {
     else return "#ddd8d812";
   };
 
-  const appearance = {
-    theme: "default", // * Theme - default, soft, brutal, midnight, none, charcoal
-  };
-
+  let appearance = {
+    theme: "default",
+    // variables: {
+    //  colorPrimary: "red",
+    //  colorBackground: "red",
+    //  colorText: "#2D3AC8",
+    // },
+  }
+  
   document.body.style.background = backgroundColor(appearance.theme);
 
   const options = {
     clientSecret,
     appearance,
-    loader:"auto"
+    loader:"auto",
+    //locale:"ja"
   };
 
   return (

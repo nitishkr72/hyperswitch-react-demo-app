@@ -71,7 +71,8 @@ export default function CheckoutForm() {
     layout: "tabs",
     wallets: {
       walletReturnUrl: "http://localhost:3000/complete",
-    }
+    },
+   // paymentMethodOrder:["klarna"]
   };
 
   return (
